@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+        <head>
+            <title>Cs Gym Memberships</title>
+                <script>
+
+                </script>
+                <link href="styles.css" rel="stylesheet" type="text/css"/>
+        </head>
+
+        
+        <body>
+      		<h1>Create a New Member Account</h1> 
+		<p>Enter Your Details Here</p>
+
+<!--    		The form used for the data entry, placeholder determining what needs to be entered
+		into each field, the auto selecting username when the page is loaded
+		the required being the validation stopping no entries being made into the database
+		and the min being another age validation-->
+
+		<form method="post" action="/save_data.php">
+			<input type="text" name="fname" placeholder="First Name" required autofocus>
+			<input type="text" name="lname" placeholder="Last Name" required>
+			<input type="number" name="age" min="18" placeholder="Age (Minimum 18)" required>
+			<input type="number" name="weight" placeholder="Weight" required>
+			<input type="submit" value="Submit">
+		</form>
+
+        </body>
+</html>
